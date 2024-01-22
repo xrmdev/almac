@@ -1,0 +1,91 @@
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.exe.config
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.exe
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.pdb
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.ColorPicker.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.CustomControl1.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.Form1.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.SwitchTool.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.exe
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.pdb
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.exe.config
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.exe
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.pdb
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.SuggestedBindingRedirects.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.ColorPicker.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.CustomControl1.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.Form1.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.SwitchTool.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.exe
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.pdb
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\bin\Debug\MacroSwitch.exe.config
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\bin\Debug\MacroSwitch.exe
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\bin\Debug\MacroSwitch.pdb
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.SuggestedBindingRedirects.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.ColorPicker.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.CustomControl1.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.Form1.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.SwitchTool.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.exe
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy\MacroSwitch\obj\Debug\MacroSwitch.pdb
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\bin\Debug\MacroSwitch.exe.config
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\bin\Debug\MacroSwitch.exe
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\bin\Debug\MacroSwitch.pdb
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.SuggestedBindingRedirects.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.ColorPicker.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.CustomControl1.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.Form1.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.SwitchTool.resources
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.exe
+C:\Users\yerl02\Desktop\ALMacro\ALMacro\MacroSwitch - Copy - Copy - Copy\MacroSwitch\obj\Debug\MacroSwitch.pdb
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\bin\Debug\MacroSwitch.exe.config
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\bin\Debug\MacroSwitch.exe
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\bin\Debug\MacroSwitch.pdb
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.csproj.SuggestedBindingRedirects.cache
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.ColorPicker.resources
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.CustomControl1.resources
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.Form1.resources
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.SwitchTool.resources
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.exe
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.pdb
+C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.MSettings.resources
+C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\MacroSwitch.exe.config
+C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\MacroSwitch.exe
+C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\MacroSwitch.pdb
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.SuggestedBindingRedirects.cache
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.ColorPicker.resources
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.CustomControl1.resources
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.Form1.resources
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.MSettings.resources
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.SwitchTool.resources
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.exe
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.pdb
