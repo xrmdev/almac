@@ -205,6 +205,7 @@ namespace MacroSwitch
 						{
 
 							LogBox.Text = "OFF";
+							status_bar.BackColor = Color.Red;
 							bRepeat = false;
 							MacroProgress = 999;
 							if (!cbNewBar_Checked)
@@ -215,7 +216,7 @@ namespace MacroSwitch
 									IncrementCurrBar();
 								}
 							}
-							if (cbSwitch_Checked) switcher?.MakeSwitch();
+							//if (cbSwitch_Checked) switcher?.MakeSwitch();
 						}
 						else
 						{
@@ -225,7 +226,9 @@ namespace MacroSwitch
 						}
 						break;
 				}
-				Thread.Sleep(200);
+				//Thread.Sleep(200);
+				//Thread.Sleep();
+
 			}
 
 			base.WndProc(ref m);
@@ -285,22 +288,8 @@ namespace MacroSwitch
 
 				CurrentBar = Convert.ToInt32(txtStartBar_Text);
 
-				if (row1Indexes.Count > 0 && !cbNewBar_Checked)
-				{
-					while (CurrentBar != Row1BarNum_Value)
-					{
-						MacroHelper.SendBarUp(targetProcess);
-						IncrementCurrBar();
-					}
-					Thread.Sleep(30);
-					for (int i = 0; i < row1Indexes.Count; i++)
-					{
-						int currX = baseX + row1XOffsets[i] + (row1Indexes[i] * 50) + (row1Indexes[i] * 2);
-						int currY = YHeight + row1YOffsets[i];
-						row1PixelList.Add(GetPixelColorSimplified(targetProcess, currX, currY));
-					}
-				}
-				else if (row1Indexes.Count > 0)
+
+				if (row1Indexes.Count > 0)
 				{
 					for (int i = 0; i < row1Indexes.Count; i++)
 					{
@@ -311,22 +300,8 @@ namespace MacroSwitch
 						row1PixelList.Add(GetPixelColorSimplified(targetProcess, currX, currY));
 					}
 				}
-				if (row2Indexes.Count > 0 && !cbNewBar_Checked)
-				{
-					while (CurrentBar != Row2BarNum_Value)
-					{
-						MacroHelper.SendBarUp(targetProcess);
-						IncrementCurrBar();
-					}
-					Thread.Sleep(30);
-					for (int i = 0; i < row2Indexes.Count; i++)
-					{
-						int currX = baseX + row2XOffsets[i] + (row2Indexes[i] * 50) + (row2Indexes[i] * 2);
-						int currY = YHeight + row2YOffsets[i];
-						row2PixelList.Add(GetPixelColorSimplified(targetProcess, currX, currY));
-					}
-				}
-				else if (row2Indexes.Count > 0)
+
+				if (row2Indexes.Count > 0)
 				{
 					for (int i = 0; i < row2Indexes.Count; i++)
 					{
@@ -498,27 +473,34 @@ namespace MacroSwitch
 			}
 		}
 
-		private void ProcessMacroEntryBar1(int key, int delay)
+		private void ProcessMacroEntryBar1(List<int>list, int MacroProgress, int delay)
 		{
-			var color = Row1Skill1_Label.ForeColor;
-			switch (key)
+			if (MacroProgress == 999)
 			{
-				case 1:
-					Row1Skill1_Label.ForeColor = Color.Red;
-					LogBox.Text = "pressed 1 init";
-					break;
-				default:
-					break;
+				return;
 			}
+			var key = list[MacroProgress];
+		
+			var color = Row1Skill1_Label.ForeColor;
+			//switch (key)
+			//{
+			//	case 1:
+			//		Row1Skill1_Label.ForeColor = Color.Red;
+			//		LogBox.Text = "pressed 1 init";
+			//		break;
+			//	default:
+			//		break;
+			//}
 
 			int val = (int)Row1BarNum_Value;
 			if (val == 1) MacroHelper.PressBtnNormal(key, targetProcess);
 			else if (val == 2) MacroHelper.PressBtnShift(key, targetProcess);
 			else if (val == 3) MacroHelper.PressBtnCtrl(key, targetProcess);
 
-			LogBox.Text = "pressed 1 over";
+			status_bar.BackColor = Color.Green;
 
-
+			LogBox.Text = "pressed init over " + key;
+		
 			Thread.Sleep(delay);
 			Row1Skill1_Label.ForeColor = color;
 
@@ -543,7 +525,7 @@ namespace MacroSwitch
 			{
 				Task.Factory.StartNew(() =>
 				{
-					if (cbSwitch_Checked) switcher?.MakeSwitch();
+					//if (cbSwitch_Checked) switcher?.MakeSwitch();
 					while (bRepeat)
 					{
 						if (row1Indexes.Count > 0)
@@ -561,18 +543,25 @@ namespace MacroSwitch
 							{
 								if (!cbNewBar_Checked)
 								{
-									while (MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2), YHeight + row1YOffsets[MacroProgress])))
+									while (MacroProgress != 999 &&MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2), YHeight + row1YOffsets[MacroProgress])))
 									{
-										this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes[MacroProgress], delay)));
+										if (MacroProgress != 999)
+										{
+											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes,MacroProgress, delay)));
+										}
 									}
 								}
 								else
 								{
 									int offset = 0;
 									if ((int)Row1BarNum_Value > 1 && row1Indexes[MacroProgress] >= 5) offset = -1;
-									while (MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset, YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value))))
+									while (MacroProgress != 999 &&MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset, YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value))))
 									{
-										this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes[MacroProgress], delay)));
+										if (MacroProgress != 999)
+										{
+											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes,MacroProgress, delay)));
+
+										}
 									}
 								}
 							}
@@ -613,6 +602,7 @@ namespace MacroSwitch
 			}
 
 			LogBox.Text = "Macro STARTED";
+			status_bar.ForeColor = Color.Green;
 		}
 
 
@@ -633,7 +623,21 @@ namespace MacroSwitch
 		{
 			picker?.Close();
 			picker = new ColorPicker();
-			picker.alWindow = targetProcess;
+
+			if (targetProcess == IntPtr.Zero)
+			{
+				 
+				picker.alWindow = GetForegroundWindow();
+
+			}
+			else
+			{
+				picker.alWindow = targetProcess;
+
+			}
+
+
+
 			picker.Show();
 		}
 
@@ -696,6 +700,11 @@ namespace MacroSwitch
 		}
 
 		private void label4_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label_status_Click(object sender, EventArgs e)
 		{
 
 		}

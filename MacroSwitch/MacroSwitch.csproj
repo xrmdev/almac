@@ -77,6 +77,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HotKey.cs" />
+    <Compile Include="GlobalHelpers.cs" />
     <Compile Include="MacroHelper.cs" />
     <Compile Include="MyCheckBox.cs">
       <SubType>Component</SubType>
@@ -139,6 +140,8 @@
   <ItemGroup>
     <Content Include="Resources\op_check_c.png" />
     <None Include="Resources\Screenshot_2.png" />
+    <Content Include="Resources\op_option_back - Copy.png" />
+    <Content Include="Resources\tax_view_income_base.png" />
     <Content Include="Screenshot_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

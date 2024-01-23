@@ -310,8 +310,8 @@ namespace MacroSwitch
                 PostMessage(WindowHandle, (uint)WM_LBUTTONDBLCLK, 1, (uint)MakeLParam(x, y));
                 Thread.Sleep(15);
             }
-            //RefreshEquipment();
-            //RefreshInventory();
+            RefreshEquipment();
+            RefreshInventory();
         }
 
         public void UpdateInventory(int idx, Color newItem)
@@ -419,7 +419,8 @@ namespace MacroSwitch
             InitializeUsedEquipment();
             for (int i = 0; i < UsedArmory.Count(); i++)
             {
-                if (i == (int)EquipmentLayout.RING_1 && UsedArmory[i] && UsedArmory[i + 1])
+				SwapRings();
+				if (i == (int)EquipmentLayout.RING_1 && UsedArmory[i] && UsedArmory[i + 1])
                 {
                     SwapRings();
                     SwapGearForArmorIdx(i + 1);

@@ -73,7 +73,7 @@ namespace MacroSwitch
             uint scanCode = (MapVirtualKey(vk, MAPVK_VK_TO_VSC) << 16) & 0x00FF0000;
 
 
-
+            //why do this 2 times
             for (int i = 0; i < 2; i++)
             {
                 PostMessage(targetProcess, WM_KEYDOWN, vk, scanCode);
@@ -150,7 +150,24 @@ namespace MacroSwitch
 
             return cSize;
         }
-        public static int GetYOffsetFromBar(int barNum)
+
+		public static System.Drawing.Size GetCoords1(IntPtr hWnd)
+		{
+			RECT pRect;
+			System.Drawing.Size cSize = new System.Drawing.Size();
+			// get coordinates relative to window
+			GetWindowRect(hWnd, out pRect);
+
+			cSize.Width = pRect.Right - pRect.Left;
+			cSize.Height = pRect.Bottom - pRect.Top;
+			cSize.Height -= 39;
+
+
+
+
+			return cSize;
+		}
+		public static int GetYOffsetFromBar(int barNum)
         {
             if (barNum == 2) return -53;
             else if (barNum == 3) return -106;

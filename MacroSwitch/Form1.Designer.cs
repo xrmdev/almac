@@ -42,6 +42,20 @@
 			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
+			this.label15 = new System.Windows.Forms.Label();
+			this.label16 = new System.Windows.Forms.Label();
+			this.label17 = new System.Windows.Forms.Label();
+			this.label18 = new System.Windows.Forms.Label();
+			this.label19 = new System.Windows.Forms.Label();
+			this.label20 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.button_closeclients = new System.Windows.Forms.Button();
+			this.label_status = new System.Windows.Forms.Label();
+			this.status_bar = new System.Windows.Forms.ProgressBar();
 			this.Row2Skill10 = new MacroSwitch.MyCheckBox();
 			this.Row2Skill9 = new MacroSwitch.MyCheckBox();
 			this.Row2Skill8 = new MacroSwitch.MyCheckBox();
@@ -62,18 +76,6 @@
 			this.Row1Skill3 = new MacroSwitch.MyCheckBox();
 			this.Row1Skill2 = new MacroSwitch.MyCheckBox();
 			this.Row1Skill1 = new MacroSwitch.MyCheckBox();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.label17 = new System.Windows.Forms.Label();
-			this.label18 = new System.Windows.Forms.Label();
-			this.label19 = new System.Windows.Forms.Label();
-			this.label20 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button_closeclients = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// Row1Skill1_Label
@@ -117,7 +119,7 @@
 			this.LogBox.Location = new System.Drawing.Point(30, 357);
 			this.LogBox.Name = "LogBox";
 			this.LogBox.ReadOnly = true;
-			this.LogBox.Size = new System.Drawing.Size(507, 34);
+			this.LogBox.Size = new System.Drawing.Size(543, 34);
 			this.LogBox.TabIndex = 111;
 			this.LogBox.Text = "";
 			this.LogBox.TextChanged += new System.EventHandler(this.LogBox_TextChanged);
@@ -125,9 +127,9 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label1.Location = new System.Drawing.Point(23, 89);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(52, 45);
@@ -150,7 +152,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label3.BackColor = System.Drawing.Color.Transparent;
 			this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label3.Location = new System.Drawing.Point(141, 218);
@@ -162,7 +164,7 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label5.BackColor = System.Drawing.Color.Transparent;
 			this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label5.Location = new System.Drawing.Point(192, 218);
@@ -174,7 +176,7 @@
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label6.BackColor = System.Drawing.Color.Transparent;
 			this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label6.Location = new System.Drawing.Point(243, 218);
@@ -186,7 +188,7 @@
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label7.BackColor = System.Drawing.Color.Transparent;
 			this.label7.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label7.Location = new System.Drawing.Point(294, 218);
@@ -198,7 +200,7 @@
 			// label8
 			// 
 			this.label8.AutoSize = true;
-			this.label8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label8.BackColor = System.Drawing.Color.Transparent;
 			this.label8.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label8.Location = new System.Drawing.Point(346, 218);
@@ -210,7 +212,7 @@
 			// label9
 			// 
 			this.label9.AutoSize = true;
-			this.label9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label9.BackColor = System.Drawing.Color.Transparent;
 			this.label9.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label9.Location = new System.Drawing.Point(397, 218);
@@ -222,7 +224,7 @@
 			// label10
 			// 
 			this.label10.AutoSize = true;
-			this.label10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label10.BackColor = System.Drawing.Color.Transparent;
 			this.label10.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label10.Location = new System.Drawing.Point(448, 218);
@@ -234,7 +236,7 @@
 			// label11
 			// 
 			this.label11.AutoSize = true;
-			this.label11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.label11.BackColor = System.Drawing.Color.Transparent;
 			this.label11.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
 			this.label11.Location = new System.Drawing.Point(499, 218);
@@ -242,6 +244,166 @@
 			this.label11.Size = new System.Drawing.Size(43, 45);
 			this.label11.TabIndex = 121;
 			this.label11.Text = "+";
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.BackColor = System.Drawing.Color.Transparent;
+			this.label12.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label12.Location = new System.Drawing.Point(76, 89);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(52, 45);
+			this.label12.TabIndex = 122;
+			this.label12.Text = "s4";
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.BackColor = System.Drawing.Color.Transparent;
+			this.label13.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label13.Location = new System.Drawing.Point(127, 89);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(52, 45);
+			this.label13.TabIndex = 123;
+			this.label13.Text = "s5";
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.BackColor = System.Drawing.Color.Transparent;
+			this.label14.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label14.Location = new System.Drawing.Point(178, 89);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(52, 45);
+			this.label14.TabIndex = 124;
+			this.label14.Text = "s6";
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.BackColor = System.Drawing.Color.Transparent;
+			this.label15.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label15.Location = new System.Drawing.Point(229, 89);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(52, 45);
+			this.label15.TabIndex = 125;
+			this.label15.Text = "s7";
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.BackColor = System.Drawing.Color.Transparent;
+			this.label16.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label16.Location = new System.Drawing.Point(280, 89);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(52, 45);
+			this.label16.TabIndex = 126;
+			this.label16.Text = "s8";
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.BackColor = System.Drawing.Color.Transparent;
+			this.label17.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label17.Location = new System.Drawing.Point(332, 89);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(52, 45);
+			this.label17.TabIndex = 127;
+			this.label17.Text = "s9";
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.BackColor = System.Drawing.Color.Transparent;
+			this.label18.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label18.Location = new System.Drawing.Point(383, 89);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(52, 45);
+			this.label18.TabIndex = 128;
+			this.label18.Text = "s0";
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.BackColor = System.Drawing.Color.Transparent;
+			this.label19.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label19.Location = new System.Drawing.Point(434, 89);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(47, 45);
+			this.label19.TabIndex = 129;
+			this.label19.Text = "s-";
+			// 
+			// label20
+			// 
+			this.label20.AutoSize = true;
+			this.label20.BackColor = System.Drawing.Color.Transparent;
+			this.label20.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label20.Location = new System.Drawing.Point(485, 89);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(57, 45);
+			this.label20.TabIndex = 130;
+			this.label20.Text = "s+";
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(618, 161);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(118, 31);
+			this.button1.TabIndex = 131;
+			this.button1.Text = "Settings";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(618, 218);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(118, 31);
+			this.button2.TabIndex = 132;
+			this.button2.Text = "Launch client directly";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// button_closeclients
+			// 
+			this.button_closeclients.Location = new System.Drawing.Point(618, 266);
+			this.button_closeclients.Name = "button_closeclients";
+			this.button_closeclients.Size = new System.Drawing.Size(118, 31);
+			this.button_closeclients.TabIndex = 133;
+			this.button_closeclients.Text = "CLOSE ALL CLIENTS";
+			this.button_closeclients.UseVisualStyleBackColor = true;
+			this.button_closeclients.Click += new System.EventHandler(this.button_closeclients_Click);
+			// 
+			// label_status
+			// 
+			this.label_status.AutoSize = true;
+			this.label_status.BackColor = System.Drawing.Color.Transparent;
+			this.label_status.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+			this.label_status.ForeColor = System.Drawing.Color.Red;
+			this.label_status.Location = new System.Drawing.Point(639, 332);
+			this.label_status.Name = "label_status";
+			this.label_status.Size = new System.Drawing.Size(78, 45);
+			this.label_status.TabIndex = 134;
+			this.label_status.Text = "OFF";
+			this.label_status.Click += new System.EventHandler(this.label_status_Click);
+			// 
+			// status_bar
+			// 
+			this.status_bar.BackColor = System.Drawing.Color.Red;
+			this.status_bar.ForeColor = System.Drawing.Color.Red;
+			this.status_bar.Location = new System.Drawing.Point(770, 6);
+			this.status_bar.Name = "status_bar";
+			this.status_bar.Size = new System.Drawing.Size(33, 32);
+			this.status_bar.TabIndex = 135;
 			// 
 			// Row2Skill10
 			// 
@@ -449,150 +611,14 @@
 			this.Row1Skill1.UseVisualStyleBackColor = true;
 			this.Row1Skill1.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
 			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label12.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label12.Location = new System.Drawing.Point(76, 89);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(52, 45);
-			this.label12.TabIndex = 122;
-			this.label12.Text = "s4";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label13.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label13.Location = new System.Drawing.Point(127, 89);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(52, 45);
-			this.label13.TabIndex = 123;
-			this.label13.Text = "s5";
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label14.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label14.Location = new System.Drawing.Point(178, 89);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(52, 45);
-			this.label14.TabIndex = 124;
-			this.label14.Text = "s6";
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label15.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label15.Location = new System.Drawing.Point(229, 89);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(52, 45);
-			this.label15.TabIndex = 125;
-			this.label15.Text = "s7";
-			// 
-			// label16
-			// 
-			this.label16.AutoSize = true;
-			this.label16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label16.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label16.Location = new System.Drawing.Point(280, 89);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(52, 45);
-			this.label16.TabIndex = 126;
-			this.label16.Text = "s8";
-			// 
-			// label17
-			// 
-			this.label17.AutoSize = true;
-			this.label17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label17.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label17.Location = new System.Drawing.Point(332, 89);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(52, 45);
-			this.label17.TabIndex = 127;
-			this.label17.Text = "s9";
-			// 
-			// label18
-			// 
-			this.label18.AutoSize = true;
-			this.label18.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label18.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label18.Location = new System.Drawing.Point(383, 89);
-			this.label18.Name = "label18";
-			this.label18.Size = new System.Drawing.Size(52, 45);
-			this.label18.TabIndex = 128;
-			this.label18.Text = "s0";
-			// 
-			// label19
-			// 
-			this.label19.AutoSize = true;
-			this.label19.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label19.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label19.Location = new System.Drawing.Point(434, 89);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(47, 45);
-			this.label19.TabIndex = 129;
-			this.label19.Text = "s-";
-			// 
-			// label20
-			// 
-			this.label20.AutoSize = true;
-			this.label20.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label20.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label20.Location = new System.Drawing.Point(485, 89);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(57, 45);
-			this.label20.TabIndex = 130;
-			this.label20.Text = "s+";
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(618, 186);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(118, 22);
-			this.button1.TabIndex = 131;
-			this.button1.Text = "Settings";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(618, 237);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(118, 26);
-			this.button2.TabIndex = 132;
-			this.button2.Text = "Launch client directly";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// button_closeclients
-			// 
-			this.button_closeclients.Location = new System.Drawing.Point(603, 276);
-			this.button_closeclients.Name = "button_closeclients";
-			this.button_closeclients.Size = new System.Drawing.Size(163, 23);
-			this.button_closeclients.TabIndex = 133;
-			this.button_closeclients.Text = "CLOSE ALL CLIENTS";
-			this.button_closeclients.UseVisualStyleBackColor = true;
-			this.button_closeclients.Click += new System.EventHandler(this.button_closeclients_Click);
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::MacroSwitch.Properties.Resources.Screenshot_2;
 			this.ClientSize = new System.Drawing.Size(807, 403);
+			this.Controls.Add(this.status_bar);
+			this.Controls.Add(this.label_status);
 			this.Controls.Add(this.button_closeclients);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
@@ -695,6 +721,8 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button_closeclients;
+		private System.Windows.Forms.Label label_status;
+		private System.Windows.Forms.ProgressBar status_bar;
 	}
 }
 
