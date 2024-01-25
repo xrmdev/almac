@@ -42,6 +42,7 @@
 		List<int> row2YOffsets = new List<int>();
 
 		public IntPtr targetProcess = IntPtr.Zero;
+		public bool tabken = false;
 
 		int MacroProgress;
 		bool bRepeat = false;
@@ -76,6 +77,12 @@
 			{
 				MessageBox.Show("Global Hotkey '[F2]' couldn't be registered !");
 			}
+		}
+
+		private void doTabken()
+		{
+			this.tabken = !this.tabken;
+
 		}
 
 		private protected string txtXCoord_Text = "0";
@@ -136,6 +143,10 @@
 
 		private void LoadAdditional()
 		{
+			//this.Cursor = new Cursor(GetType(), "cursor_m1.cur");
+
+			//this.Cursor = new Cursor("cursor_m1.cur");
+
 			Task.Run(() => Task_CheckIfArchlordIsRunningOnStart());
 		}
 
@@ -242,7 +253,7 @@
 
 			var lowestPlusOne_color = MacroHelper.GetPixelColor(targetProcess, lowest + 1, height);
 			var TargetIsAlive = isTargetSelected && lowestPlusOne_color.A == 255 && lowestPlusOne_color.R > 220; ;
-
+			target_percentage.Text = tabken.ToString();
 			if (isTargetMaxHP)
 			{
 				target_progressbar.Value = 100;
@@ -255,7 +266,11 @@
 			{
 				target_progressbar.Value = 0;
 				target_percentage.Text = $"{0} %";
-				GlobalHelpers.PressTab(targetProcess);
+				if (this.tabken)
+				{
+					GlobalHelpers.PressTab(targetProcess);
+
+				}
 
 
 			}
@@ -703,7 +718,7 @@
 
 		private void btnDebug_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("no");
+			MessageBox.Show("This feature is disabled.");
 			return;
 			picker?.Close();
 			picker = new ColorPicker();
@@ -726,7 +741,7 @@
 		private void btnSwitchOpen_Click(object sender, EventArgs e)
 		{
 
-			MessageBox.Show("Work in progress !");
+			MessageBox.Show("This feature is disabled.");
 			return;
 
 			switcher?.Close();
@@ -765,7 +780,7 @@
 		{
 			mSettings?.Close();
 			mSettings = new MSettings();
-			//mSettings.alWindow = targetProcess;
+			mSettings.form1 = this;
 			mSettings.Show();
 		}
 

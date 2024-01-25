@@ -94,3 +94,4 @@ C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\MacroSwitch.application
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.TrustInfo.xml
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.exe.manifest
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.application
+C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\cursor_m1.cur

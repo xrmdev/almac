@@ -40,17 +40,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MacroSwitch.exe" size="320000">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MacroSwitch.exe" size="322048">
       <assemblyIdentity name="MacroSwitch" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>D4bLuMxuGYz6mrzHR/QQSXdXV8ak2ihG5QVyeDIk0TA=</dsig:DigestValue>
+        <dsig:DigestValue>8n4pgsM/ALKQ8YB13bX9UAYHCCGNQvpK4+1yQ5E1yEc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="cursor_m1.cur" size="16958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nquyUJzC9KjYMH7ytU9pphQPisKCNNjQ00jDE0wO7p8=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="MacroSwitch.exe.config" size="189">
     <hash>
       <dsig:Transforms>

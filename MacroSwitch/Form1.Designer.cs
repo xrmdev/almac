@@ -52,7 +52,6 @@
 			this.label19 = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
 			this.button_closeclients = new System.Windows.Forms.Button();
 			this.status_bar = new System.Windows.Forms.ProgressBar();
 			this.target_progressbar = new System.Windows.Forms.ProgressBar();
@@ -94,6 +93,7 @@
 			// 
 			// btnDebug
 			// 
+			this.btnDebug.Cursor = System.Windows.Forms.Cursors.No;
 			this.btnDebug.Location = new System.Drawing.Point(618, 112);
 			this.btnDebug.Name = "btnDebug";
 			this.btnDebug.Size = new System.Drawing.Size(118, 29);
@@ -104,12 +104,14 @@
 			// 
 			// btnSwitchOpen
 			// 
+			this.btnSwitchOpen.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.btnSwitchOpen.Cursor = System.Windows.Forms.Cursors.No;
 			this.btnSwitchOpen.Location = new System.Drawing.Point(618, 64);
 			this.btnSwitchOpen.Name = "btnSwitchOpen";
 			this.btnSwitchOpen.Size = new System.Drawing.Size(118, 31);
 			this.btnSwitchOpen.TabIndex = 110;
-			this.btnSwitchOpen.Text = "Switch";
-			this.btnSwitchOpen.UseVisualStyleBackColor = true;
+			this.btnSwitchOpen.Text = "Ring Switch";
+			this.btnSwitchOpen.UseVisualStyleBackColor = false;
 			this.btnSwitchOpen.Click += new System.EventHandler(this.btnSwitchOpen_Click);
 			// 
 			// LogBox
@@ -357,7 +359,7 @@
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(618, 161);
+			this.button1.Location = new System.Drawing.Point(618, 206);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(118, 31);
 			this.button1.TabIndex = 131;
@@ -365,23 +367,13 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(618, 218);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(118, 31);
-			this.button2.TabIndex = 132;
-			this.button2.Text = "Launch client directly";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
 			// button_closeclients
 			// 
-			this.button_closeclients.Location = new System.Drawing.Point(618, 266);
+			this.button_closeclients.Location = new System.Drawing.Point(618, 160);
 			this.button_closeclients.Name = "button_closeclients";
 			this.button_closeclients.Size = new System.Drawing.Size(118, 31);
 			this.button_closeclients.TabIndex = 133;
-			this.button_closeclients.Text = "CLOSE ALL CLIENTS";
+			this.button_closeclients.Text = "Close Client";
 			this.button_closeclients.UseVisualStyleBackColor = true;
 			this.button_closeclients.Click += new System.EventHandler(this.button_closeclients_Click);
 			// 
@@ -430,6 +422,7 @@
 			// 
 			// Row2Skill10
 			// 
+			this.Row2Skill10.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill10.Location = new System.Drawing.Point(492, 137);
 			this.Row2Skill10.Name = "Row2Skill10";
 			this.Row2Skill10.Size = new System.Drawing.Size(45, 45);
@@ -440,6 +433,7 @@
 			// 
 			// Row2Skill9
 			// 
+			this.Row2Skill9.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill9.Location = new System.Drawing.Point(441, 137);
 			this.Row2Skill9.Name = "Row2Skill9";
 			this.Row2Skill9.Size = new System.Drawing.Size(45, 45);
@@ -450,6 +444,7 @@
 			// 
 			// Row2Skill8
 			// 
+			this.Row2Skill8.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.Row2Skill8.Location = new System.Drawing.Point(390, 137);
 			this.Row2Skill8.Name = "Row2Skill8";
@@ -461,6 +456,7 @@
 			// 
 			// Row2Skill7
 			// 
+			this.Row2Skill7.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill7.Location = new System.Drawing.Point(339, 137);
 			this.Row2Skill7.Name = "Row2Skill7";
 			this.Row2Skill7.Size = new System.Drawing.Size(45, 45);
@@ -471,6 +467,7 @@
 			// 
 			// Row2Skill6
 			// 
+			this.Row2Skill6.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill6.Location = new System.Drawing.Point(287, 137);
 			this.Row2Skill6.Name = "Row2Skill6";
 			this.Row2Skill6.Size = new System.Drawing.Size(45, 45);
@@ -481,6 +478,7 @@
 			// 
 			// Row2Skill5
 			// 
+			this.Row2Skill5.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill5.Location = new System.Drawing.Point(236, 137);
 			this.Row2Skill5.Name = "Row2Skill5";
 			this.Row2Skill5.Size = new System.Drawing.Size(45, 45);
@@ -491,6 +489,7 @@
 			// 
 			// Row2Skill4
 			// 
+			this.Row2Skill4.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill4.Location = new System.Drawing.Point(185, 137);
 			this.Row2Skill4.Name = "Row2Skill4";
 			this.Row2Skill4.Size = new System.Drawing.Size(45, 45);
@@ -501,6 +500,7 @@
 			// 
 			// Row2Skill3
 			// 
+			this.Row2Skill3.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill3.Location = new System.Drawing.Point(134, 137);
 			this.Row2Skill3.Name = "Row2Skill3";
 			this.Row2Skill3.Size = new System.Drawing.Size(45, 45);
@@ -511,6 +511,7 @@
 			// 
 			// Row2Skill2
 			// 
+			this.Row2Skill2.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill2.Location = new System.Drawing.Point(83, 137);
 			this.Row2Skill2.Name = "Row2Skill2";
 			this.Row2Skill2.Size = new System.Drawing.Size(45, 45);
@@ -522,7 +523,6 @@
 			// Row2Skill1
 			// 
 			this.Row2Skill1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.Row2Skill1.BackgroundImage = global::MacroSwitch.Properties.Resources.op_check_c;
 			this.Row2Skill1.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row2Skill1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.Row2Skill1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -536,6 +536,7 @@
 			// 
 			// Row1Skill10
 			// 
+			this.Row1Skill10.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill10.Location = new System.Drawing.Point(492, 266);
 			this.Row1Skill10.Name = "Row1Skill10";
 			this.Row1Skill10.Size = new System.Drawing.Size(45, 45);
@@ -546,6 +547,7 @@
 			// 
 			// Row1Skill9
 			// 
+			this.Row1Skill9.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill9.Location = new System.Drawing.Point(441, 266);
 			this.Row1Skill9.Name = "Row1Skill9";
 			this.Row1Skill9.Size = new System.Drawing.Size(45, 45);
@@ -556,6 +558,7 @@
 			// 
 			// Row1Skill8
 			// 
+			this.Row1Skill8.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill8.Location = new System.Drawing.Point(390, 266);
 			this.Row1Skill8.Name = "Row1Skill8";
 			this.Row1Skill8.Size = new System.Drawing.Size(45, 45);
@@ -566,6 +569,7 @@
 			// 
 			// Row1Skill7
 			// 
+			this.Row1Skill7.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill7.Location = new System.Drawing.Point(339, 266);
 			this.Row1Skill7.Name = "Row1Skill7";
 			this.Row1Skill7.Size = new System.Drawing.Size(45, 45);
@@ -576,6 +580,7 @@
 			// 
 			// Row1Skill6
 			// 
+			this.Row1Skill6.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill6.Location = new System.Drawing.Point(287, 266);
 			this.Row1Skill6.Name = "Row1Skill6";
 			this.Row1Skill6.Size = new System.Drawing.Size(45, 45);
@@ -586,6 +591,7 @@
 			// 
 			// Row1Skill5
 			// 
+			this.Row1Skill5.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill5.Location = new System.Drawing.Point(236, 266);
 			this.Row1Skill5.Name = "Row1Skill5";
 			this.Row1Skill5.Size = new System.Drawing.Size(45, 45);
@@ -596,6 +602,7 @@
 			// 
 			// Row1Skill4
 			// 
+			this.Row1Skill4.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill4.Location = new System.Drawing.Point(185, 266);
 			this.Row1Skill4.Name = "Row1Skill4";
 			this.Row1Skill4.Size = new System.Drawing.Size(45, 45);
@@ -606,6 +613,7 @@
 			// 
 			// Row1Skill3
 			// 
+			this.Row1Skill3.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill3.Location = new System.Drawing.Point(134, 266);
 			this.Row1Skill3.Name = "Row1Skill3";
 			this.Row1Skill3.Size = new System.Drawing.Size(45, 45);
@@ -616,6 +624,7 @@
 			// 
 			// Row1Skill2
 			// 
+			this.Row1Skill2.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill2.Location = new System.Drawing.Point(83, 266);
 			this.Row1Skill2.Name = "Row1Skill2";
 			this.Row1Skill2.Size = new System.Drawing.Size(45, 45);
@@ -626,6 +635,7 @@
 			// 
 			// Row1Skill1
 			// 
+			this.Row1Skill1.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Row1Skill1.Location = new System.Drawing.Point(30, 266);
 			this.Row1Skill1.Name = "Row1Skill1";
 			this.Row1Skill1.Size = new System.Drawing.Size(45, 45);
@@ -645,7 +655,6 @@
 			this.Controls.Add(this.target_progressbar);
 			this.Controls.Add(this.status_bar);
 			this.Controls.Add(this.button_closeclients);
-			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label20);
 			this.Controls.Add(this.label19);
@@ -690,7 +699,9 @@
 			this.Controls.Add(this.Row1Skill3);
 			this.Controls.Add(this.Row1Skill2);
 			this.Controls.Add(this.Row1Skill1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "Form1";
+			this.Opacity = 0.95D;
 			this.Text = "Form1";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -744,7 +755,6 @@
 		private System.Windows.Forms.Label label19;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button_closeclients;
 		private System.Windows.Forms.ProgressBar status_bar;
 		private System.Windows.Forms.ProgressBar target_progressbar;

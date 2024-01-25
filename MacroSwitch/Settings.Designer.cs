@@ -28,28 +28,86 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.fontDialog1 = new System.Windows.Forms.FontDialog();
-			this.button1 = new System.Windows.Forms.Button();
+			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.checkBox2 = new System.Windows.Forms.CheckBox();
+			this.checkBox3 = new System.Windows.Forms.CheckBox();
+			this.checkBox4 = new System.Windows.Forms.CheckBox();
+			this.checkBox5 = new System.Windows.Forms.CheckBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
-			// listBox1
+			// checkBox1
 			// 
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.Location = new System.Drawing.Point(87, 107);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(120, 95);
-			this.listBox1.TabIndex = 0;
+			this.checkBox1.AutoSize = true;
+			this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox1.ForeColor = System.Drawing.Color.White;
+			this.checkBox1.Location = new System.Drawing.Point(36, 103);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(152, 17);
+			this.checkBox1.TabIndex = 0;
+			this.checkBox1.Text = "Press TAB after target dies";
+			this.checkBox1.UseVisualStyleBackColor = false;
+			this.checkBox1.CheckedChanged += new System.EventHandler(this.checkbox_tabontargetdie);
 			// 
-			// button1
+			// checkBox2
 			// 
-			this.button1.Location = new System.Drawing.Point(61, 31);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.checkBox2.AutoSize = true;
+			this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox2.ForeColor = System.Drawing.Color.White;
+			this.checkBox2.Location = new System.Drawing.Point(36, 126);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(77, 17);
+			this.checkBox2.TabIndex = 1;
+			this.checkBox2.Text = "Spam TAB";
+			this.checkBox2.UseVisualStyleBackColor = false;
+			this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.AutoSize = true;
+			this.checkBox3.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox3.ForeColor = System.Drawing.Color.White;
+			this.checkBox3.Location = new System.Drawing.Point(36, 316);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(144, 17);
+			this.checkBox3.TabIndex = 2;
+			this.checkBox3.Text = "Close Archlord on 5% HP";
+			this.checkBox3.UseVisualStyleBackColor = false;
+			this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+			// 
+			// checkBox4
+			// 
+			this.checkBox4.AutoSize = true;
+			this.checkBox4.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox4.ForeColor = System.Drawing.Color.White;
+			this.checkBox4.Location = new System.Drawing.Point(36, 293);
+			this.checkBox4.Name = "checkBox4";
+			this.checkBox4.Size = new System.Drawing.Size(192, 17);
+			this.checkBox4.TabIndex = 3;
+			this.checkBox4.Text = "Close Archlord when closing Macro";
+			this.checkBox4.UseVisualStyleBackColor = false;
+			this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+			// 
+			// checkBox5
+			// 
+			this.checkBox5.AutoSize = true;
+			this.checkBox5.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox5.ForeColor = System.Drawing.Color.White;
+			this.checkBox5.Location = new System.Drawing.Point(299, 204);
+			this.checkBox5.Name = "checkBox5";
+			this.checkBox5.Size = new System.Drawing.Size(122, 17);
+			this.checkBox5.TabIndex = 4;
+			this.checkBox5.Text = "Set Cast Time Value";
+			this.checkBox5.UseVisualStyleBackColor = false;
+			this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(427, 202);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(78, 20);
+			this.textBox1.TabIndex = 5;
 			// 
 			// MSettings
 			// 
@@ -58,19 +116,28 @@
 			this.AutoSize = true;
 			this.BackgroundImage = global::MacroSwitch.Properties.Resources.zever;
 			this.ClientSize = new System.Drawing.Size(552, 498);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.listBox1);
+			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.checkBox5);
+			this.Controls.Add(this.checkBox4);
+			this.Controls.Add(this.checkBox3);
+			this.Controls.Add(this.checkBox2);
+			this.Controls.Add(this.checkBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "MSettings";
 			this.Text = "Settings";
 			this.Load += new System.EventHandler(this.Settings_Load);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.ListBox listBox1;
 		private System.Windows.Forms.FontDialog fontDialog1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.CheckBox checkBox1;
+		private System.Windows.Forms.CheckBox checkBox2;
+		private System.Windows.Forms.CheckBox checkBox3;
+		private System.Windows.Forms.CheckBox checkBox4;
+		private System.Windows.Forms.CheckBox checkBox5;
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }

@@ -144,6 +144,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cursor_m1.cur">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\aaaScreenshot_3.png" />
     <Content Include="Resources\op_check_c.png" />
     <None Include="Resources\Screenshot_2.png" />
