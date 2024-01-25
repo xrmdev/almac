@@ -54,8 +54,10 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button_closeclients = new System.Windows.Forms.Button();
-			this.label_status = new System.Windows.Forms.Label();
 			this.status_bar = new System.Windows.Forms.ProgressBar();
+			this.target_progressbar = new System.Windows.Forms.ProgressBar();
+			this.label4 = new System.Windows.Forms.Label();
+			this.target_percentage = new System.Windows.Forms.Label();
 			this.Row2Skill10 = new MacroSwitch.MyCheckBox();
 			this.Row2Skill9 = new MacroSwitch.MyCheckBox();
 			this.Row2Skill8 = new MacroSwitch.MyCheckBox();
@@ -116,10 +118,10 @@
 			this.LogBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.LogBox.Cursor = System.Windows.Forms.Cursors.No;
 			this.LogBox.ForeColor = System.Drawing.SystemColors.Info;
-			this.LogBox.Location = new System.Drawing.Point(30, 357);
+			this.LogBox.Location = new System.Drawing.Point(600, 321);
 			this.LogBox.Name = "LogBox";
 			this.LogBox.ReadOnly = true;
-			this.LogBox.Size = new System.Drawing.Size(543, 34);
+			this.LogBox.Size = new System.Drawing.Size(195, 60);
 			this.LogBox.TabIndex = 111;
 			this.LogBox.Text = "";
 			this.LogBox.TextChanged += new System.EventHandler(this.LogBox_TextChanged);
@@ -383,19 +385,6 @@
 			this.button_closeclients.UseVisualStyleBackColor = true;
 			this.button_closeclients.Click += new System.EventHandler(this.button_closeclients_Click);
 			// 
-			// label_status
-			// 
-			this.label_status.AutoSize = true;
-			this.label_status.BackColor = System.Drawing.Color.Transparent;
-			this.label_status.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-			this.label_status.ForeColor = System.Drawing.Color.Red;
-			this.label_status.Location = new System.Drawing.Point(639, 332);
-			this.label_status.Name = "label_status";
-			this.label_status.Size = new System.Drawing.Size(78, 45);
-			this.label_status.TabIndex = 134;
-			this.label_status.Text = "OFF";
-			this.label_status.Click += new System.EventHandler(this.label_status_Click);
-			// 
 			// status_bar
 			// 
 			this.status_bar.BackColor = System.Drawing.Color.Red;
@@ -404,6 +393,40 @@
 			this.status_bar.Name = "status_bar";
 			this.status_bar.Size = new System.Drawing.Size(33, 32);
 			this.status_bar.TabIndex = 135;
+			// 
+			// target_progressbar
+			// 
+			this.target_progressbar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.target_progressbar.ForeColor = System.Drawing.Color.Red;
+			this.target_progressbar.Location = new System.Drawing.Point(97, 357);
+			this.target_progressbar.Name = "target_progressbar";
+			this.target_progressbar.Size = new System.Drawing.Size(445, 34);
+			this.target_progressbar.TabIndex = 136;
+			this.target_progressbar.Click += new System.EventHandler(this.target_progressbar_Click);
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.BackColor = System.Drawing.Color.Transparent;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.label4.Location = new System.Drawing.Point(12, 362);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(84, 19);
+			this.label4.TabIndex = 137;
+			this.label4.Text = "Target HP: ";
+			// 
+			// target_percentage
+			// 
+			this.target_percentage.AutoSize = true;
+			this.target_percentage.BackColor = System.Drawing.Color.Transparent;
+			this.target_percentage.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+			this.target_percentage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.target_percentage.Location = new System.Drawing.Point(543, 362);
+			this.target_percentage.Name = "target_percentage";
+			this.target_percentage.Size = new System.Drawing.Size(26, 13);
+			this.target_percentage.TabIndex = 138;
+			this.target_percentage.Text = "0 %";
 			// 
 			// Row2Skill10
 			// 
@@ -617,8 +640,10 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::MacroSwitch.Properties.Resources.Screenshot_2;
 			this.ClientSize = new System.Drawing.Size(807, 403);
+			this.Controls.Add(this.target_percentage);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.target_progressbar);
 			this.Controls.Add(this.status_bar);
-			this.Controls.Add(this.label_status);
 			this.Controls.Add(this.button_closeclients);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
@@ -721,8 +746,10 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button_closeclients;
-		private System.Windows.Forms.Label label_status;
 		private System.Windows.Forms.ProgressBar status_bar;
+		private System.Windows.Forms.ProgressBar target_progressbar;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label target_percentage;
 	}
 }
 

@@ -4,7 +4,10 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Windows.Input;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MacroSwitch
@@ -62,6 +65,21 @@ namespace MacroSwitch
 			PostMessage(alWindow, WM_KEYDOWN, vk, scanCode);
 
 			// Simulate releasing the TAB key
+			PostMessage(alWindow, WM_KEYUP, vk, (scanCode));
+		}
+
+		public static void Pressz(IntPtr alWindow)
+		{
+			const uint vk = 0x5A; // Virtual key code for 'Z'
+			uint scanCode = (MapVirtualKey(vk, MAPVK_VK_TO_VSC) << 16) & 0x00FF0000;
+
+			// Simulate pressing the Z key
+			PostMessage(alWindow, WM_KEYDOWN, vk, scanCode);
+
+			// Wait for the specified duration
+			//Thread.Sleep(2000);
+
+			// Simulate releasing the Z key
 			PostMessage(alWindow, WM_KEYUP, vk, (scanCode));
 		}
 

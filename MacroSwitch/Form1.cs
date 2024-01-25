@@ -1,25 +1,18 @@
-﻿using MacroSwitch.Properties;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Sockets;
-using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Channels;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using System.Xml.Schema;
-using System.Xml.Serialization;
-using ExtensionMethods;
-
-namespace MacroSwitch
+﻿namespace MacroSwitch
 {
+	using System;
+	using System.IO;
+	using System.Linq;
+	using System.Drawing;
+	using ExtensionMethods;
+	using System.Threading;
+	using System.Diagnostics;
+	using System.Windows.Forms;
+	using System.Threading.Tasks;
+	using System.Xml.Serialization;
+	using System.Collections.Generic;
+	using System.Runtime.InteropServices;
+
 	public partial class Form1 : Form
 	{
 		[DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
@@ -41,7 +34,6 @@ namespace MacroSwitch
 		int baseX = 730;
 		int YHeight = 1036;
 
-
 		List<int> row1Indexes = new List<int>();
 		List<int> row2Indexes = new List<int>();
 		List<int> row1XOffsets = new List<int>();
@@ -54,12 +46,13 @@ namespace MacroSwitch
 		int MacroProgress;
 		bool bRepeat = false;
 		int CurrentBar;
+		System.Windows.Forms.Timer targetTimer = new System.Windows.Forms.Timer();
 
 
 		List<Color> row1PixelList = new List<Color>();
 		List<Color> row2PixelList = new List<Color>();
 		bool bPrepared = false;
-
+		bool init = false;
 
 		ColorPicker picker;
 		SwitchTool switcher;
@@ -83,7 +76,6 @@ namespace MacroSwitch
 			{
 				MessageBox.Show("Global Hotkey '[F2]' couldn't be registered !");
 			}
-
 		}
 
 		private protected string txtXCoord_Text = "0";
@@ -97,19 +89,17 @@ namespace MacroSwitch
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			target_progressbar.Value = 0;
+			target_progressbar.Maximum = 100;
+			target_progressbar.Minimum = 0;
 
 			if (File.Exists("config.xml"))
 			{
 				loadConfig();
 			}
 
-
-
 			baseX = 0;
 			YHeight = 0;
-
-
-
 
 			Row1Skill1.Checked = state.Row1 != null && state.Row1.FirstOrDefault();
 			Row1Skill2.Checked = state.Row1 != null && state.Row1[1];
@@ -133,7 +123,6 @@ namespace MacroSwitch
 			Row2Skill10.Checked = state.Row1 != null && state.Row2[9];
 
 
-
 			this.LoadAdditional();
 		}
 		private void loadConfig()
@@ -150,7 +139,6 @@ namespace MacroSwitch
 			Task.Run(() => Task_CheckIfArchlordIsRunningOnStart());
 		}
 
-
 		private async Task Task_CheckIfArchlordIsRunningOnStart()
 		{
 			var counter = 1;
@@ -162,7 +150,7 @@ namespace MacroSwitch
 
 				LogBox.InvokeIfRequired(() =>
 				{
-					LogBox.Text = "Archlord is not running. Looking for processname = ''alefclient" + counter;
+					LogBox.Text = "Archlord is not running. Can not find process 'alefclient.exe'";
 				});
 				Thread.Sleep(1000);
 				counter++;
@@ -171,10 +159,9 @@ namespace MacroSwitch
 
 			LogBox.InvokeIfRequired(() =>
 			{
-				LogBox.Text = "Archlord running, let's go!";
+				LogBox.Text = "Archlord running. Focus your window and sta F2";
 			});
 		}
-
 
 		private void Form1_FormClosing(object sender, FormClosingEventArgs e)
 		{
@@ -191,7 +178,6 @@ namespace MacroSwitch
 				ser.Serialize(sw, state);
 			}
 		}
-
 
 		protected override void WndProc(ref Message m)
 		{
@@ -221,17 +207,124 @@ namespace MacroSwitch
 						else
 						{
 							LogBox.Text = "ON";
+							if (!init)
+							{
+								init = true;
+								targetTimer.Interval = 1000;
+								targetTimer.Tick += Timer_Tick1;
+								targetTimer.Start();
+							}
 
 							Macro();
 						}
 						break;
 				}
 				//Thread.Sleep(200);
-				//Thread.Sleep();
-
 			}
 
 			base.WndProc(ref m);
+		}
+
+		private void Timer_Tick1(object sender, EventArgs e)
+		{
+			int Width = MacroHelper.GetCoords1(targetProcess).Width;
+			int Middle = MacroHelper.GetCoords1(targetProcess).Width / 2;
+			int height = 23;
+			int lowest = Middle - 107;
+			int highest = Middle + 71;
+
+			var lowest_color = MacroHelper.GetPixelColor(targetProcess, lowest, height);
+			var isTargetSelected = lowest_color.A == 255 && lowest_color.R > 220;
+
+			var highest_color = MacroHelper.GetPixelColor(targetProcess, highest, height);
+
+			var isTargetMaxHP = highest_color.A == 255 && highest_color.R > 220;
+
+			var lowestPlusOne_color = MacroHelper.GetPixelColor(targetProcess, lowest + 1, height);
+			var TargetIsAlive = isTargetSelected && lowestPlusOne_color.A == 255 && lowestPlusOne_color.R > 220; ;
+
+			if (isTargetMaxHP)
+			{
+				target_progressbar.Value = 100;
+				target_percentage.Text = $"{100} %";
+
+				return;
+			}
+
+			if (!TargetIsAlive)
+			{
+				target_progressbar.Value = 0;
+				target_percentage.Text = $"{0} %";
+				GlobalHelpers.PressTab(targetProcess);
+
+
+			}
+
+			for (int i = 1; i <= 20; i++)
+			{
+
+				var minus = i * 9;
+				if (i == 19) { minus--; }
+				if (i == 20) { minus -= 2; }
+				var color = MacroHelper.GetPixelColor(targetProcess, highest - minus, height);
+				var isredish = color.A == 255 && color.R > 220;
+				if (isredish)
+				{
+					var xxx = (20 - i) * 5;
+					target_progressbar.Value = (20 - i) * 5;
+					target_percentage.Text = $"{xxx} %";
+
+					return;
+				}
+			}
+
+			//var highest_color_95_color = MacroHelper.GetPixelColor(targetProcess, highest - 18, height);
+			//var highest_color_95 = highest_color_95_color.A == 255 && highest_color_95_color.R > 220;
+			//if (highest_color_95)
+			//{
+			//	target_progressbar.Value = 95;
+			//	return;
+			//}
+			//var highest_color_90_color = MacroHelper.GetPixelColor(targetProcess, highest - 36, height);
+			//var highest_color_90 = highest_color_90_color.A == 255 && highest_color_90_color.R > 220;
+			//if (highest_color_90)
+			//{
+			//	target_progressbar.Value = 90;
+			//	return;
+			//}
+			//var highest_color_85_color = MacroHelper.GetPixelColor(targetProcess, highest - 53, height);
+			//var highest_color_85 = highest_color_85_color.A == 255 && highest_color_85_color.R > 220;
+			//if (highest_color_85)
+			//{
+			//	target_progressbar.Value = 85;
+			//	return;
+			//}
+			//var highest_color_80_color = MacroHelper.GetPixelColor(targetProcess, highest - 71, height);
+			//var highest_color_80 = highest_color_80_color.A == 255 && highest_color_80_color.R > 220;
+			//if (highest_color_80)
+			//{
+			//	target_progressbar.Value = 80;
+			//	return;
+			//}
+
+
+			////if (isTargetMaxHP)
+			////{
+			////	target_progressbar.Value = 100;
+
+			////}
+			////else if (TargetIsAlive)
+			////{
+			////	target_progressbar.Value = 50;
+
+			////}
+			////else
+			////{
+			////	target_progressbar.Value = 0;
+
+			////}
+
+
 		}
 
 		private void Macro()
@@ -246,7 +339,6 @@ namespace MacroSwitch
 
 				return;
 			}
-
 
 			var temp = alefclients.Where(x => x.MainWindowHandle == targetProcess).ToList();
 			if (!temp.Any())
@@ -274,9 +366,6 @@ namespace MacroSwitch
 
 		private void Prepare()
 		{
-			//baseX = Int32.Parse(txtXCoord.Text);
-			//YHeight = Int32.Parse(txtYCoord.Text);
-
 			baseX = MacroHelper.GetCoords(targetProcess).Width;
 			YHeight = MacroHelper.GetCoords(targetProcess).Height;
 
@@ -285,9 +374,7 @@ namespace MacroSwitch
 				row1PixelList.Clear();
 				row2PixelList.Clear();
 
-
 				CurrentBar = Convert.ToInt32(txtStartBar_Text);
-
 
 				if (row1Indexes.Count > 0)
 				{
@@ -454,7 +541,6 @@ namespace MacroSwitch
 				row2YOffsets.Add(8);
 			}
 
-
 			try
 			{
 				IntPtr currHandle = targetProcess;
@@ -473,14 +559,14 @@ namespace MacroSwitch
 			}
 		}
 
-		private void ProcessMacroEntryBar1(List<int>list, int MacroProgress, int delay)
+		private void ProcessMacroEntryBar1(List<int> list, int MacroProgress, int delay)
 		{
 			if (MacroProgress == 999)
 			{
 				return;
 			}
 			var key = list[MacroProgress];
-		
+
 			var color = Row1Skill1_Label.ForeColor;
 			//switch (key)
 			//{
@@ -499,8 +585,8 @@ namespace MacroSwitch
 
 			status_bar.BackColor = Color.Green;
 
-			LogBox.Text = "pressed init over " + key;
-		
+			//LogBox.Text = "pressed init over " + key;
+
 			Thread.Sleep(delay);
 			Row1Skill1_Label.ForeColor = color;
 
@@ -543,11 +629,11 @@ namespace MacroSwitch
 							{
 								if (!cbNewBar_Checked)
 								{
-									while (MacroProgress != 999 &&MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2), YHeight + row1YOffsets[MacroProgress])))
+									while (MacroProgress != 999 && MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2), YHeight + row1YOffsets[MacroProgress])))
 									{
 										if (MacroProgress != 999)
 										{
-											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes,MacroProgress, delay)));
+											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes, MacroProgress, delay)));
 										}
 									}
 								}
@@ -555,11 +641,11 @@ namespace MacroSwitch
 								{
 									int offset = 0;
 									if ((int)Row1BarNum_Value > 1 && row1Indexes[MacroProgress] >= 5) offset = -1;
-									while (MacroProgress != 999 &&MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset, YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value))))
+									while (MacroProgress != 999 && MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset, YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value))))
 									{
 										if (MacroProgress != 999)
 										{
-											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes,MacroProgress, delay)));
+											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes, MacroProgress, delay)));
 
 										}
 									}
@@ -601,12 +687,9 @@ namespace MacroSwitch
 				});
 			}
 
-			LogBox.Text = "Macro STARTED";
+			//LogBox.Text = "Macro STARTED";
 			status_bar.ForeColor = Color.Green;
 		}
-
-
-
 
 		private void Row1Skill1X_TextChanged(object sender, EventArgs e)
 		{
@@ -618,15 +701,16 @@ namespace MacroSwitch
 			bPrepared = false;
 		}
 
-
 		private void btnDebug_Click(object sender, EventArgs e)
 		{
+			MessageBox.Show("no");
+			return;
 			picker?.Close();
 			picker = new ColorPicker();
 
 			if (targetProcess == IntPtr.Zero)
 			{
-				 
+
 				picker.alWindow = GetForegroundWindow();
 
 			}
@@ -636,13 +720,15 @@ namespace MacroSwitch
 
 			}
 
-
-
 			picker.Show();
 		}
 
 		private void btnSwitchOpen_Click(object sender, EventArgs e)
 		{
+
+			MessageBox.Show("Work in progress !");
+			return;
+
 			switcher?.Close();
 			switcher = new SwitchTool();
 			switcher.alWindow = targetProcess;
@@ -688,7 +774,6 @@ namespace MacroSwitch
 
 			Process.Start("C:\\Users\\yerl02\\Documents\\AL\\Custom-Archlord\\Custom-Archlord");
 
-
 		}
 
 		private void button_closeclients_Click(object sender, EventArgs e)
@@ -708,13 +793,18 @@ namespace MacroSwitch
 		{
 
 		}
+
+		private void target_progressbar_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
-
-
 }
 
 namespace ExtensionMethods
 {
+	using System.Windows.Forms;
+
 	public static class MyExtensions
 	{
 		public static void InvokeIfRequired(this Control control, MethodInvoker action)
@@ -730,3 +820,12 @@ namespace ExtensionMethods
 		}
 	}
 }
+
+//using System.Runtime.Remoting.Channels;
+//using MacroSwitch.Properties;
+//using System.Windows;
+//using System.Xml.Linq;
+//using System.Xml.Schema;
+//using System.Net;
+//using System.Net.Sockets;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement;

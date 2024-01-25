@@ -79,6 +79,9 @@ namespace MacroSwitch
                 PostMessage(targetProcess, WM_KEYDOWN, vk, scanCode);
                 PostMessage(targetProcess, WM_UP, vk, (scanCode));
             }
+
+           // GlobalHelpers.Pressz(targetProcess);
+           
         }
 
         public static void PressBtnShift(int key, IntPtr targetProcess)

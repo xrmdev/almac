@@ -82,6 +82,8 @@ namespace MacroSwitch
 		private void click_search_white_pixel(object sender, EventArgs e)
 		{
 
+			GlobalHelpers.Pressz(alWindow);
+			GlobalHelpers.PressTab(alWindow);
 			//int temp1 = MacroHelper.GetCoords1(alWindow).Width;
 			//int temp2 = MacroHelper.GetCoords1(alWindow).Height;
 			//label5.Text = temp1.ToString();
@@ -112,13 +114,17 @@ namespace MacroSwitch
 		}
 
 
+
 		private void button2_Click(object sender, EventArgs e)
 		{
-
-			ClickAtPosition(xx, yy);
+			//GlobalHelpers.Pressz(alWindow);
+			//GlobalHelpers.PressTab(alWindow);
+			//ClickAtPosition(xx, yy);
 
 
 		}
+
+
 
 		private void Timer_Tick1(object sender, EventArgs e)
 		{
@@ -141,7 +147,7 @@ namespace MacroSwitch
 			if (alWindow != null)
 			{
 				timerlen.Text = $"Target Selected= {isTargetSelected} | Target MAX HP = {isTargetMaxHP} | Target Is Dead:  {!TargetIsAlive}";
-				
+
 			}
 
 
@@ -211,7 +217,6 @@ namespace MacroSwitch
 		[DllImport("User32.Dll")]
 		static extern bool PostMessage(IntPtr hWnd, uint msg, uint wParam, uint lParam);
 
-
 		public int MakeLParam(int LoWord, int HiWord)
 		{
 			return (int)((HiWord << 16) | (LoWord & 0xFFFF));
@@ -244,11 +249,25 @@ namespace MacroSwitch
 		private void click_tab(object sender, EventArgs e)
 		{
 			GlobalHelpers.PressTab(alWindow);
-		
+
 		}
 		const uint MAPVK_VK_TO_VSC = 0;
 
-	
+		private void timerlen_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Tab_click(object sender, EventArgs e)
+		{
+			GlobalHelpers.PressTab(alWindow);
+
+		}
+
+		private void Press_z_click(object sender, EventArgs e)
+		{
+
+		}
 
 		public void ClickAtPosition1(int x, int y)
 		{
