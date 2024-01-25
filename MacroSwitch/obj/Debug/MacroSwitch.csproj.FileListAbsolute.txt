@@ -89,3 +89,8 @@ C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.Core
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.exe
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.pdb
+C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\MacroSwitch.exe.manifest
+C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\MacroSwitch.application
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.TrustInfo.xml
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.exe.manifest
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.application

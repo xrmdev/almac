@@ -55,7 +55,9 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(550, 271);
+			this.AutoSize = true;
+			this.BackgroundImage = global::MacroSwitch.Properties.Resources.zever;
+			this.ClientSize = new System.Drawing.Size(552, 498);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.listBox1);
 			this.Name = "MSettings";
