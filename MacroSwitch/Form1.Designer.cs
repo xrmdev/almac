@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.Row1Skill1_Label = new System.Windows.Forms.Label();
 			this.btnDebug = new System.Windows.Forms.Button();
 			this.btnSwitchOpen = new System.Windows.Forms.Button();
@@ -57,6 +58,9 @@
 			this.target_progressbar = new System.Windows.Forms.ProgressBar();
 			this.label4 = new System.Windows.Forms.Label();
 			this.target_percentage = new System.Windows.Forms.Label();
+			this.button2 = new System.Windows.Forms.Button();
+			this.label21 = new System.Windows.Forms.Label();
+			this.button3 = new System.Windows.Forms.Button();
 			this.Row2Skill10 = new MacroSwitch.MyCheckBox();
 			this.Row2Skill9 = new MacroSwitch.MyCheckBox();
 			this.Row2Skill8 = new MacroSwitch.MyCheckBox();
@@ -93,24 +97,31 @@
 			// 
 			// btnDebug
 			// 
+			this.btnDebug.BackColor = System.Drawing.Color.Transparent;
 			this.btnDebug.Cursor = System.Windows.Forms.Cursors.No;
-			this.btnDebug.Location = new System.Drawing.Point(618, 112);
+			this.btnDebug.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnDebug.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.btnDebug.Location = new System.Drawing.Point(623, 128);
 			this.btnDebug.Name = "btnDebug";
-			this.btnDebug.Size = new System.Drawing.Size(118, 29);
+			this.btnDebug.Size = new System.Drawing.Size(125, 34);
 			this.btnDebug.TabIndex = 109;
-			this.btnDebug.Text = "Debug";
-			this.btnDebug.UseVisualStyleBackColor = true;
+			this.btnDebug.Text = "Buffs";
+			this.btnDebug.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnDebug.UseVisualStyleBackColor = false;
 			this.btnDebug.Click += new System.EventHandler(this.btnDebug_Click);
 			// 
 			// btnSwitchOpen
 			// 
-			this.btnSwitchOpen.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.btnSwitchOpen.BackColor = System.Drawing.Color.Transparent;
 			this.btnSwitchOpen.Cursor = System.Windows.Forms.Cursors.No;
-			this.btnSwitchOpen.Location = new System.Drawing.Point(618, 64);
+			this.btnSwitchOpen.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnSwitchOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.btnSwitchOpen.Location = new System.Drawing.Point(623, 78);
 			this.btnSwitchOpen.Name = "btnSwitchOpen";
-			this.btnSwitchOpen.Size = new System.Drawing.Size(118, 31);
+			this.btnSwitchOpen.Size = new System.Drawing.Size(125, 34);
 			this.btnSwitchOpen.TabIndex = 110;
 			this.btnSwitchOpen.Text = "Ring Switch";
+			this.btnSwitchOpen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnSwitchOpen.UseVisualStyleBackColor = false;
 			this.btnSwitchOpen.Click += new System.EventHandler(this.btnSwitchOpen_Click);
 			// 
@@ -359,32 +370,43 @@
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(618, 206);
+			this.button1.BackColor = System.Drawing.Color.Transparent;
+			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.button1.Location = new System.Drawing.Point(623, 245);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(118, 31);
+			this.button1.Size = new System.Drawing.Size(125, 34);
 			this.button1.TabIndex = 131;
 			this.button1.Text = "Settings";
-			this.button1.UseVisualStyleBackColor = true;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button1.UseVisualStyleBackColor = false;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// button_closeclients
 			// 
-			this.button_closeclients.Location = new System.Drawing.Point(618, 160);
+			this.button_closeclients.BackColor = System.Drawing.Color.Transparent;
+			this.button_closeclients.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button_closeclients.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.button_closeclients.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(237)))), ((int)(((byte)(192)))));
+			this.button_closeclients.Location = new System.Drawing.Point(623, 188);
 			this.button_closeclients.Name = "button_closeclients";
-			this.button_closeclients.Size = new System.Drawing.Size(118, 31);
+			this.button_closeclients.Size = new System.Drawing.Size(125, 34);
 			this.button_closeclients.TabIndex = 133;
-			this.button_closeclients.Text = "Close Client";
-			this.button_closeclients.UseVisualStyleBackColor = true;
+			this.button_closeclients.Text = "Close Clients";
+			this.button_closeclients.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button_closeclients.UseVisualStyleBackColor = false;
 			this.button_closeclients.Click += new System.EventHandler(this.button_closeclients_Click);
 			// 
 			// status_bar
 			// 
 			this.status_bar.BackColor = System.Drawing.Color.Red;
 			this.status_bar.ForeColor = System.Drawing.Color.Red;
-			this.status_bar.Location = new System.Drawing.Point(770, 6);
+			this.status_bar.Location = new System.Drawing.Point(614, 380);
 			this.status_bar.Name = "status_bar";
-			this.status_bar.Size = new System.Drawing.Size(33, 32);
+			this.status_bar.Size = new System.Drawing.Size(171, 11);
 			this.status_bar.TabIndex = 135;
+			this.status_bar.Click += new System.EventHandler(this.status_bar_Click);
 			// 
 			// target_progressbar
 			// 
@@ -419,6 +441,41 @@
 			this.target_percentage.Size = new System.Drawing.Size(26, 13);
 			this.target_percentage.TabIndex = 138;
 			this.target_percentage.Text = "0 %";
+			// 
+			// button2
+			// 
+			this.button2.BackColor = System.Drawing.Color.Transparent;
+			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button2.Location = new System.Drawing.Point(762, 4);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(42, 40);
+			this.button2.TabIndex = 139;
+			this.button2.UseVisualStyleBackColor = false;
+			this.button2.Click += new System.EventHandler(this.button2_Click_1);
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.BackColor = System.Drawing.Color.Transparent;
+			this.label21.Cursor = System.Windows.Forms.Cursors.SizeAll;
+			this.label21.Location = new System.Drawing.Point(12, 4);
+			this.label21.Name = "label21";
+			this.label21.Padding = new System.Windows.Forms.Padding(0, 0, 700, 30);
+			this.label21.Size = new System.Drawing.Size(700, 43);
+			this.label21.TabIndex = 140;
+			this.label21.Click += new System.EventHandler(this.label21_Click);
+			this.label21.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+			// 
+			// button3
+			// 
+			this.button3.BackColor = System.Drawing.Color.Transparent;
+			this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button3.Location = new System.Drawing.Point(722, 4);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(37, 40);
+			this.button3.TabIndex = 141;
+			this.button3.UseVisualStyleBackColor = false;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// Row2Skill10
 			// 
@@ -650,6 +707,9 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::MacroSwitch.Properties.Resources.Screenshot_2;
 			this.ClientSize = new System.Drawing.Size(807, 403);
+			this.Controls.Add(this.button3);
+			this.Controls.Add(this.label21);
+			this.Controls.Add(this.button2);
 			this.Controls.Add(this.target_percentage);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.target_progressbar);
@@ -699,12 +759,14 @@
 			this.Controls.Add(this.Row1Skill3);
 			this.Controls.Add(this.Row1Skill2);
 			this.Controls.Add(this.Row1Skill1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form1";
 			this.Opacity = 0.95D;
 			this.Text = "Form1";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -760,6 +822,9 @@
 		private System.Windows.Forms.ProgressBar target_progressbar;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label target_percentage;
+		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.Button button3;
 	}
 }
 

@@ -63,6 +63,16 @@ namespace MacroSwitch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap main_button_1a {
+            get {
+                object obj = ResourceManager.GetObject("main_button_1a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap op_check_c {
             get {
                 object obj = ResourceManager.GetObject("op_check_c", resourceCulture);

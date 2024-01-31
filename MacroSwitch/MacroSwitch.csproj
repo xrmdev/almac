@@ -44,6 +44,9 @@
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main_button_1a.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
@@ -147,7 +150,9 @@
     <Content Include="cursor_m1.cur">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="main_button_1a.ico" />
     <Content Include="Resources\aaaScreenshot_3.png" />
+    <None Include="Resources\main_button_1a.png" />
     <Content Include="Resources\op_check_c.png" />
     <None Include="Resources\Screenshot_2.png" />
     <None Include="Resources\zever.png" />

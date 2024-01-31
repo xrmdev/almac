@@ -85,6 +85,18 @@
 
 		}
 
+		//protected override void OnPaint(PaintEventArgs e)
+		//{
+		//	ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.White, ButtonBorderStyle.None);
+		//}
+		 private const int WM_NCHITTEST = 0x84;
+     private const int HTCLIENT = 0x1;
+     private const int HTCAPTION = 0x2;
+
+     ///
+     /// Handling the window messages 
+     ///
+   
 		private protected string txtXCoord_Text = "0";
 		private protected string txtYCoord_Text = "0";
 		private protected string txtDelay_Text = "1";
@@ -96,6 +108,8 @@
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+
+
 			target_progressbar.Value = 0;
 			target_progressbar.Maximum = 100;
 			target_progressbar.Minimum = 0;
@@ -161,7 +175,7 @@
 
 				LogBox.InvokeIfRequired(() =>
 				{
-					LogBox.Text = "Archlord is not running. Can not find process 'alefclient.exe'";
+					LogBox.Text = "Archlord is not running.\n Can not find process 'alefclient.exe'";
 				});
 				Thread.Sleep(1000);
 				counter++;
@@ -234,6 +248,7 @@
 			}
 
 			base.WndProc(ref m);
+
 		}
 
 		private void Timer_Tick1(object sender, EventArgs e)
@@ -811,6 +826,45 @@
 
 		private void target_progressbar_Click(object sender, EventArgs e)
 		{
+
+		}
+
+		public const int WM_NCLBUTTONDOWN = 0xA1;
+		public const int HT_CAPTION = 0x2;
+
+		[System.Runtime.InteropServices.DllImport("user32.dll")]
+		public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+		[System.Runtime.InteropServices.DllImport("user32.dll")]
+		public static extern bool ReleaseCapture();
+
+		private void Form1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+		{
+			if (e.Button == MouseButtons.Left)
+			{
+				ReleaseCapture();
+				SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+			}
+		}
+
+		private void status_bar_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button2_Click_1(object sender, EventArgs e)
+		{
+
+			Application.Exit();
+		}
+
+		private void label21_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			this.WindowState = FormWindowState.Minimized;
 
 		}
 	}
