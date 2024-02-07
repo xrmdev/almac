@@ -75,11 +75,9 @@ C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.pdb
 C:\Users\yerl02\source\repos\ALMacro\MacroSwitch\obj\Debug\MacroSwitch.MSettings.resources
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.SuggestedBindingRedirects.cache
-C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
-C:\Users\yerl02\source\repos\almac\MacroSwitch\bin\Debug\cursor_m1.cur
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.ColorPicker.resources
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.CustomControl1.resources
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.Form1.resources
@@ -95,3 +93,4 @@ C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.exe.manif
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.application
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.exe
 C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.pdb
+C:\Users\yerl02\source\repos\almac\MacroSwitch\obj\Debug\ArchlordMacro.Properties.Resources.resources

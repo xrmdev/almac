@@ -105,7 +105,7 @@
 			this.btnDebug.Name = "btnDebug";
 			this.btnDebug.Size = new System.Drawing.Size(125, 34);
 			this.btnDebug.TabIndex = 109;
-			this.btnDebug.Text = "Buffs";
+			this.btnDebug.Text = "Info Tool";
 			this.btnDebug.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.btnDebug.UseVisualStyleBackColor = false;
 			this.btnDebug.Click += new System.EventHandler(this.btnDebug_Click);

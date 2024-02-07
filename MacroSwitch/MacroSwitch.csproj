@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8721C848-B5D7-4D38-9908-E209107C1C5E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MacroSwitch</RootNamespace>
+    <RootNamespace>ArchlordMacro</RootNamespace>
     <AssemblyName>ArchlordMacro</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -150,10 +150,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cursor_m1.cur">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="main_button_1a.ico" />
     <Content Include="Resources\aaaScreenshot_3.png" />
     <Content Include="techorama.ico" />
     <None Include="Resources\main_button_1a.png" />

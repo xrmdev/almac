@@ -41,14 +41,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArchlordMacro.exe" size="422912">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArchlordMacro.exe" size="423424">
       <assemblyIdentity name="ArchlordMacro" version="2024.2.7.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>u36poVnlqlC38BnQQTFQ8+Nech0mNs59aGLBjdnJx5U=</dsig:DigestValue>
+        <dsig:DigestValue>Xd2pURPaXV+Dr+U/PFtS5MDV32tAZTNS1SgP2CRpMXM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,24 +59,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="cursor_m1.cur" size="16958">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>nquyUJzC9KjYMH7ytU9pphQPisKCNNjQ00jDE0wO7p8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="main_button_1a.ico" size="114043">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>M2nWGqRTtJ86oCI8WYA/9YJw//pLfbnZNXBlRuW8Ya8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\aaaScreenshot_3.png" size="127609">

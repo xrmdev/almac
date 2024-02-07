@@ -45,9 +45,9 @@ namespace ArchlordMacro
 			form1.tabken = !form1.tabken;
 		}
 
-		private void checkBox2_CheckedChanged(object sender, EventArgs e)
+		private void Click_PressTabEverySec(object sender, EventArgs e)
 		{
-			MessageBox.Show("This feature is disabled.");
+			form1.tabkenEverySec = !form1.tabkenEverySec;
 		}
 
 		private void checkBox3_CheckedChanged(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace ArchlordMacro
 
 		}
 
-		private void click_SetCastTime(object sender, EventArgs e)
+		private void Click_SetCastTime(object sender, EventArgs e)
 		{
 			// do nothing when checkbox is false
 			if (checkBox_CastTime.Checked == false)
@@ -111,9 +111,11 @@ namespace ArchlordMacro
 		private void SetArchlordMemory(Int32 pointer, int[] offsets, Int32 value)
 		{
 			var process = "alefclient";
-			Process gameProcess = Process.GetProcessesByName(process).FirstOrDefault();
+			var processes = Process.GetProcessesByName(process).Where(x => x.MainWindowHandle == alWindow).ToList();
+			if (!processes.Any()) { return; }
+			Process gameProcess = processes.FirstOrDefault();
 			IntPtr baseAddress = gameProcess.MainModule.BaseAddress + pointer;
-
+			
 			var VAM = new VAMemory(process);
 
 			for (int offset = 0; offset < offsets.Length; offset++)
@@ -123,7 +125,6 @@ namespace ArchlordMacro
 			}
 
 			VAM.WriteInt32(baseAddress, value);
-
 		}
 
 

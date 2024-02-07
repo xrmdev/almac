@@ -30,7 +30,7 @@
 		{
 			this.fontDialog1 = new System.Windows.Forms.FontDialog();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
+			this.checkBox_spamtabeverysecond = new System.Windows.Forms.CheckBox();
 			this.checkBox3 = new System.Windows.Forms.CheckBox();
 			this.checkBox4 = new System.Windows.Forms.CheckBox();
 			this.checkBox_CastTime = new System.Windows.Forms.CheckBox();
@@ -50,18 +50,18 @@
 			this.checkBox1.UseVisualStyleBackColor = false;
 			this.checkBox1.CheckedChanged += new System.EventHandler(this.checkbox_tabontargetdie);
 			// 
-			// checkBox2
+			// checkBox_spamtabeverysecond
 			// 
-			this.checkBox2.AutoSize = true;
-			this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-			this.checkBox2.ForeColor = System.Drawing.Color.White;
-			this.checkBox2.Location = new System.Drawing.Point(36, 126);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(77, 17);
-			this.checkBox2.TabIndex = 1;
-			this.checkBox2.Text = "Spam TAB";
-			this.checkBox2.UseVisualStyleBackColor = false;
-			this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+			this.checkBox_spamtabeverysecond.AutoSize = true;
+			this.checkBox_spamtabeverysecond.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox_spamtabeverysecond.ForeColor = System.Drawing.Color.White;
+			this.checkBox_spamtabeverysecond.Location = new System.Drawing.Point(36, 126);
+			this.checkBox_spamtabeverysecond.Name = "checkBox_spamtabeverysecond";
+			this.checkBox_spamtabeverysecond.Size = new System.Drawing.Size(134, 17);
+			this.checkBox_spamtabeverysecond.TabIndex = 1;
+			this.checkBox_spamtabeverysecond.Text = "Press TAB every 1 sec";
+			this.checkBox_spamtabeverysecond.UseVisualStyleBackColor = false;
+			this.checkBox_spamtabeverysecond.CheckedChanged += new System.EventHandler(this.Click_PressTabEverySec);
 			// 
 			// checkBox3
 			// 
@@ -102,7 +102,7 @@
 			this.checkBox_CastTime.TabIndex = 4;
 			this.checkBox_CastTime.Text = "Set Cast Time Value";
 			this.checkBox_CastTime.UseVisualStyleBackColor = false;
-			this.checkBox_CastTime.CheckedChanged += new System.EventHandler(this.click_SetCastTime);
+			this.checkBox_CastTime.CheckedChanged += new System.EventHandler(this.Click_SetCastTime);
 			// 
 			// text_CastTimeValue
 			// 
@@ -122,7 +122,7 @@
 			this.Controls.Add(this.checkBox_CastTime);
 			this.Controls.Add(this.checkBox4);
 			this.Controls.Add(this.checkBox3);
-			this.Controls.Add(this.checkBox2);
+			this.Controls.Add(this.checkBox_spamtabeverysecond);
 			this.Controls.Add(this.checkBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "MSettings";
@@ -136,7 +136,7 @@
 		#endregion
 		private System.Windows.Forms.FontDialog fontDialog1;
 		private System.Windows.Forms.CheckBox checkBox1;
-		private System.Windows.Forms.CheckBox checkBox2;
+		private System.Windows.Forms.CheckBox checkBox_spamtabeverysecond;
 		private System.Windows.Forms.CheckBox checkBox3;
 		private System.Windows.Forms.CheckBox checkBox4;
 		private System.Windows.Forms.CheckBox checkBox_CastTime;

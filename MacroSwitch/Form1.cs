@@ -43,6 +43,7 @@
 
 		public IntPtr targetProcess = IntPtr.Zero;
 		public bool tabken = false;
+		public bool tabkenEverySec = false;
 
 		int MacroProgress;
 		bool bRepeat = false;
@@ -79,11 +80,7 @@
 			}
 		}
 
-		private void doTabken()
-		{
-			this.tabken = !this.tabken;
-
-		}
+	
 
 		//protected override void OnPaint(PaintEventArgs e)
 		//{
@@ -157,10 +154,7 @@
 
 		private void LoadAdditional()
 		{
-			//this.Cursor = new Cursor(GetType(), "cursor_m1.cur");
-
-			//this.Cursor = new Cursor("cursor_m1.cur");
-
+			
 			Task.Run(() => Task_CheckIfArchlordIsRunningOnStart());
 		}
 
@@ -190,6 +184,8 @@
 
 
 			});
+
+		
 		}
 
 		private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -220,6 +216,8 @@
 						{
 
 							LogBox.Text = "OFF";
+							this.SetSkillsEnabled(true);
+
 							status_bar.BackColor = Color.Red;
 							bRepeat = false;
 							MacroProgress = 999;
@@ -236,6 +234,9 @@
 						else
 						{
 							LogBox.Text = "ON";
+
+							this.SetSkillsEnabled(false);
+						
 							if (!init)
 							{
 								init = true;
@@ -255,8 +256,40 @@
 
 		}
 
+		private void SetSkillsEnabled(bool Enabled)
+		{
+			Row1Skill1.Enabled = Enabled;
+			Row1Skill2.Enabled = Enabled;
+			Row1Skill3.Enabled = Enabled;
+			Row1Skill4.Enabled = Enabled;
+			Row1Skill5.Enabled = Enabled;
+			Row1Skill6.Enabled = Enabled;
+			Row1Skill7.Enabled = Enabled;
+			Row1Skill8.Enabled = Enabled;
+			Row1Skill9.Enabled = Enabled;
+			Row1Skill10.Enabled = Enabled;
+
+			Row2Skill1.Enabled = Enabled;
+			Row2Skill2.Enabled = Enabled;
+			Row2Skill3.Enabled = Enabled;
+			Row2Skill4.Enabled = Enabled;
+			Row2Skill5.Enabled = Enabled;
+			Row2Skill6.Enabled = Enabled;
+			Row2Skill7.Enabled = Enabled;
+			Row2Skill8.Enabled = Enabled;
+			Row2Skill9.Enabled = Enabled;
+			Row2Skill10.Enabled = Enabled;
+		}
+
 		private void Timer_Tick1(object sender, EventArgs e)
 		{
+
+			if (tabkenEverySec)
+			{
+				GlobalHelpers.PressTab(targetProcess);
+				LogBox.Text = "Tab every sec is on";
+			}
+
 			int Width = MacroHelper.GetCoords1(targetProcess).Width;
 			int Middle = MacroHelper.GetCoords1(targetProcess).Width / 2;
 			int height = 23;
@@ -311,7 +344,7 @@
 					return;
 				}
 			}
-
+		
 			//var highest_color_95_color = MacroHelper.GetPixelColor(targetProcess, highest - 18, height);
 			//var highest_color_95 = highest_color_95_color.A == 255 && highest_color_95_color.R > 220;
 			//if (highest_color_95)
