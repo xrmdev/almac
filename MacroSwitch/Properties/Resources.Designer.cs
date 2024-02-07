@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MacroSwitch.Properties {
+namespace ArchlordMacro.Properties {
     using System;
     
     

@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMacro
 {
     partial class ColorPicker
     {
@@ -216,7 +216,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::MacroSwitch.Properties.Resources.Screenshot_2;
+			this.BackgroundImage = global::ArchlordMacro.Properties.Resources.Screenshot_2;
 			this.ClientSize = new System.Drawing.Size(592, 555);
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);

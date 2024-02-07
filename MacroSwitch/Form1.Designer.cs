@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMacro
 {
     partial class Form1
     {
@@ -61,26 +61,26 @@
 			this.button2 = new System.Windows.Forms.Button();
 			this.label21 = new System.Windows.Forms.Label();
 			this.button3 = new System.Windows.Forms.Button();
-			this.Row2Skill10 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill9 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill8 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill7 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill6 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill5 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill4 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill3 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill2 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill1 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill10 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill9 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill8 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill7 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill6 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill5 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill4 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill3 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill2 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill1 = new MacroSwitch.MyCheckBox();
+			this.Row2Skill10 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill9 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill8 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill7 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill6 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill5 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill4 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill3 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill2 = new ArchlordMacro.MyCheckBox();
+			this.Row2Skill1 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill10 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill9 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill8 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill7 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill6 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill5 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill4 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill3 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill2 = new ArchlordMacro.MyCheckBox();
+			this.Row1Skill1 = new ArchlordMacro.MyCheckBox();
 			this.SuspendLayout();
 			// 
 			// Row1Skill1_Label
@@ -705,7 +705,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::MacroSwitch.Properties.Resources.Screenshot_2;
+			this.BackgroundImage = global::ArchlordMacro.Properties.Resources.Screenshot_2;
 			this.ClientSize = new System.Drawing.Size(807, 403);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.label21);

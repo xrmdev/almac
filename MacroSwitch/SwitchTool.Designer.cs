@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMacro
 {
     partial class SwitchTool
     {
@@ -54,16 +54,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.EquipmentSlot5 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot10 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot4 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot3 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot2 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot1 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot7 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot6 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot9 = new MacroSwitch.MyCheckBox();
-            this.EquipmentSlot8 = new MacroSwitch.MyCheckBox();
+            this.EquipmentSlot5 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot10 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot4 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot3 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot2 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot1 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot7 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot6 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot9 = new ArchlordMacro.MyCheckBox();
+            this.EquipmentSlot8 = new ArchlordMacro.MyCheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();

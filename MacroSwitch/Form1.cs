@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMacro
 {
 	using System;
 	using System.IO;
@@ -175,7 +175,7 @@
 
 				LogBox.InvokeIfRequired(() =>
 				{
-					LogBox.Text = "Archlord is not running.\n Can not find process 'alefclient.exe'";
+					LogBox.Text = "Custom-Archlord is not running.";
 				});
 				Thread.Sleep(1000);
 				counter++;
@@ -184,7 +184,11 @@
 
 			LogBox.InvokeIfRequired(() =>
 			{
-				LogBox.Text = "Archlord running. Focus your window and sta F2";
+				LogBox.Text = "Custom-Archlord running.\n" +
+				"Target Window is not yet selected.\n"  +
+				"Focus any AL window and press F2";
+
+
 			});
 		}
 
@@ -796,6 +800,7 @@
 			mSettings?.Close();
 			mSettings = new MSettings();
 			mSettings.form1 = this;
+			mSettings.alWindow = targetProcess;
 			mSettings.Show();
 		}
 

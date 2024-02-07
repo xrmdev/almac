@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMacro
 {
     partial class CustomControl1
     {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace MacroSwitch
+namespace ArchlordMacro
 {
     public static class GlobalHelpers
     {

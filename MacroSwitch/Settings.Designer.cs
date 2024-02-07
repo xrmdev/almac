@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMacro
 {
 	partial class MSettings
 	{
@@ -33,8 +33,8 @@
 			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.checkBox3 = new System.Windows.Forms.CheckBox();
 			this.checkBox4 = new System.Windows.Forms.CheckBox();
-			this.checkBox5 = new System.Windows.Forms.CheckBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.checkBox_CastTime = new System.Windows.Forms.CheckBox();
+			this.text_CastTimeValue = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// checkBox1
@@ -67,6 +67,7 @@
 			// 
 			this.checkBox3.AutoSize = true;
 			this.checkBox3.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox3.Enabled = false;
 			this.checkBox3.ForeColor = System.Drawing.Color.White;
 			this.checkBox3.Location = new System.Drawing.Point(36, 316);
 			this.checkBox3.Name = "checkBox3";
@@ -80,6 +81,7 @@
 			// 
 			this.checkBox4.AutoSize = true;
 			this.checkBox4.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox4.Enabled = false;
 			this.checkBox4.ForeColor = System.Drawing.Color.White;
 			this.checkBox4.Location = new System.Drawing.Point(36, 293);
 			this.checkBox4.Name = "checkBox4";
@@ -89,35 +91,35 @@
 			this.checkBox4.UseVisualStyleBackColor = false;
 			this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
 			// 
-			// checkBox5
+			// checkBox_CastTime
 			// 
-			this.checkBox5.AutoSize = true;
-			this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-			this.checkBox5.ForeColor = System.Drawing.Color.White;
-			this.checkBox5.Location = new System.Drawing.Point(299, 204);
-			this.checkBox5.Name = "checkBox5";
-			this.checkBox5.Size = new System.Drawing.Size(122, 17);
-			this.checkBox5.TabIndex = 4;
-			this.checkBox5.Text = "Set Cast Time Value";
-			this.checkBox5.UseVisualStyleBackColor = false;
-			this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+			this.checkBox_CastTime.AutoSize = true;
+			this.checkBox_CastTime.BackColor = System.Drawing.Color.Transparent;
+			this.checkBox_CastTime.ForeColor = System.Drawing.Color.White;
+			this.checkBox_CastTime.Location = new System.Drawing.Point(299, 204);
+			this.checkBox_CastTime.Name = "checkBox_CastTime";
+			this.checkBox_CastTime.Size = new System.Drawing.Size(122, 17);
+			this.checkBox_CastTime.TabIndex = 4;
+			this.checkBox_CastTime.Text = "Set Cast Time Value";
+			this.checkBox_CastTime.UseVisualStyleBackColor = false;
+			this.checkBox_CastTime.CheckedChanged += new System.EventHandler(this.click_SetCastTime);
 			// 
-			// textBox1
+			// text_CastTimeValue
 			// 
-			this.textBox1.Location = new System.Drawing.Point(427, 202);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(78, 20);
-			this.textBox1.TabIndex = 5;
+			this.text_CastTimeValue.Location = new System.Drawing.Point(427, 202);
+			this.text_CastTimeValue.Name = "text_CastTimeValue";
+			this.text_CastTimeValue.Size = new System.Drawing.Size(78, 20);
+			this.text_CastTimeValue.TabIndex = 5;
 			// 
 			// MSettings
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
-			this.BackgroundImage = global::MacroSwitch.Properties.Resources.zever;
+			this.BackgroundImage = global::ArchlordMacro.Properties.Resources.zever;
 			this.ClientSize = new System.Drawing.Size(552, 498);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.checkBox5);
+			this.Controls.Add(this.text_CastTimeValue);
+			this.Controls.Add(this.checkBox_CastTime);
 			this.Controls.Add(this.checkBox4);
 			this.Controls.Add(this.checkBox3);
 			this.Controls.Add(this.checkBox2);
@@ -137,7 +139,7 @@
 		private System.Windows.Forms.CheckBox checkBox2;
 		private System.Windows.Forms.CheckBox checkBox3;
 		private System.Windows.Forms.CheckBox checkBox4;
-		private System.Windows.Forms.CheckBox checkBox5;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.CheckBox checkBox_CastTime;
+		private System.Windows.Forms.TextBox text_CastTimeValue;
 	}
 }

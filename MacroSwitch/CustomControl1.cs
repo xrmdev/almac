@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MacroSwitch
+namespace ArchlordMacro
 {
     public partial class CustomControl1 : Control
     {
